@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="hi，coming life~">
 <meta property="og:description" content="测试手机的网络类型">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-22T07:18:57.575Z">
+<meta property="og:updated_time" content="2019-05-22T08:05:28.634Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="获取wifi">
 <meta name="twitter:description" content="测试手机的网络类型">
@@ -307,7 +307,8 @@
             function getNetworkType() {
                 var ua = navigator.userAgent;
                 // alert(navigator.userAgent)
-                alert(navigator.userAgent)
+                var connection = navigator.connection||navigator.mozConnection||navigator.webkitConnection||{tyep:'unknown'};
+                alert(connection)
                 var networkStr = ua.match(/NetType\/\w+/) ? ua.match(/NetType\/\w+/)[0] : 'NetType/other';
                 networkStr = networkStr.toLowerCase().replace('nettype/', '');
                 var networkType;
