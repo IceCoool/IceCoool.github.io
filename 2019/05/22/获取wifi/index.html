@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="hi，coming life~">
 <meta property="og:description" content="测试手机的网络类型">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-22T08:05:28.634Z">
+<meta property="og:updated_time" content="2019-05-22T08:13:00.826Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="获取wifi">
 <meta name="twitter:description" content="测试手机的网络类型">
@@ -308,7 +308,7 @@
                 var ua = navigator.userAgent;
                 // alert(navigator.userAgent)
                 var connection = navigator.connection||navigator.mozConnection||navigator.webkitConnection||{tyep:'unknown'};
-                alert(connection)
+                alert(connection.bandwidth)
                 var networkStr = ua.match(/NetType\/\w+/) ? ua.match(/NetType\/\w+/)[0] : 'NetType/other';
                 networkStr = networkStr.toLowerCase().replace('nettype/', '');
                 var networkType;
@@ -366,6 +366,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/11/25/wxs的使用/" rel="prev" title="wxs的使用">
+                wxs的使用 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -433,7 +437,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
